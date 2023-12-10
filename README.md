@@ -3,7 +3,7 @@
 
 Sequence in Windows OS:
 1.	Open CMD in the files folder.
-2.	Enter to the CMD make command
+2.	Enter to the CMD "make" command
 3.	The make will create the executable file of the compiler.
 4.	In the CMD window, run the compiler with an input file.
   4.1.	For example: alc.exe input.a
