@@ -1,0 +1,26 @@
+begin
+    int i, fAvg;
+    arr fib;
+    fib:0 = 0;
+    fib:1 = 1; 
+    i=2;
+    print 0, fib:0;
+    print 1, fib:1;
+    while (i<16) do
+    begin
+        fib:i = fib:(i-2) + fib:(i-1);
+        print i, fib:i;
+        i=i+1;
+    end
+    print fib@[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+    fAvg = (fib@[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]) / 16;
+    print fAvg;
+    i=2;
+    while (i<16) do
+    begin
+        if (fib:i > fAvg) then begin
+        print i, fib:i;
+        end
+        i=i+1;
+    end
+end
